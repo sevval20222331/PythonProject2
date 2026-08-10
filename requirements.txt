@@ -1,0 +1,8 @@
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-chroma
+langchain-ollama
+opentelemetry-exporter-otlp-proto-grpc==1.42.1
+pymupdf
