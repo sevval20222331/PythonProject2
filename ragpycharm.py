@@ -27,9 +27,10 @@ vector_db = Chroma.from_documents(
     collection_name="local-rag"
 )
 
-llm = OllamaLLM(model='qwen2.5:1.5b', temperature=0.3)
+llm = OllamaLLM(model=('qwen2.5:1.5b'), temperature=0.3)
 
 RAG_PROMPT = PromptTemplate(
+
     input_variables=["context", "question"],
     template="""You are a helpful assistant. Use the following pieces of retrieved context to answer the user's question.
 If you don't know the answer or if it's not in the context, just say that you don't know. Do not make up information.
@@ -57,3 +58,4 @@ chain = (
 
 response = chain.invoke(input('\nQuestion: '))
 print('\nAnswer:', response)
+
