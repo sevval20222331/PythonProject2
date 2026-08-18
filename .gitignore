@@ -1,0 +1,35 @@
+# Sanal Ortamlar
+.venv/
+venv/
+env/
+
+# PyCharm Ayarları
+.idea/
+
+# Python Ön Bellek Dosyaları
+__pycache__/
+*.pyc
+
+# Çevresel Değişkenler (API anahtarları vb.)
+.env
+
+# Vektör Veritabanı (Eğer yerel ChromaDB vb. klasörü oluşuyorsa)
+chroma_db/
+
+# PyCharm
+.idea/
+
+# Python ve Derleme Artıkları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal Ortamlar
+.venv/
+env/
+
+.streamlit/secrets.toml
+
+
+# RAG veya Yerel Veritabanı Dosyaları (Gerekiyorsa)
+*.log
